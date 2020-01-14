@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Todo from "./Todo";
-
 const TodoList = ({ todos, onTodoClick }) => (
   <ul>
     {todos.map((todo, index) => (
@@ -20,5 +19,4 @@ TodoList.propTypes = {
   ).isRequired,
   onTodoClick: PropTypes.func.isRequired
 };
-
 export default TodoList;

@@ -33,6 +33,8 @@ function todos(state = [], action) {
             completed: !todo.completed
           });
         }
+
+        return todo;
       });
     default:
       return state;
